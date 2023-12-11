@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авто рекмонт у Вовы</title>
+
+    <style>
+        body {
+            background-image: url('background_main.jpg'); /* Задний фон */
+            background-size: cover;
+            color: white; /* Цвет текста белым */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        .contacts-link,
+        .services-link,
+        .home-link,
+        .reviews-link {
+            color: #FFD700;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .logo-link img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .collage {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .collage img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #191970;
+            color: white;
+            padding: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: stroka 10s linear infinite;
+        }
+
+        @keyframes stroka {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Авто рекмонт у Вовы</h1>
+        <div class="logo-link">
+            <a href="#">
+                <img src="logo.png" alt="Логотип компании">
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="main.html" class="home-link">Главная</a>
+        <a href="services.html" class="services-link">Услуги и цены</a>
+        <a href="reviews.html" class="reviews-link">Отзывы</a>
+        <a href="contacts.html" class="contacts-link">Контакты</a>
+    </nav>
+
+    <div class="collage">
+        <img src="photo1.jpg" alt="Фото 1">
+        <img src="photo2.jpg" alt="Фото 2">
+        <img src="photo3.jpg" alt="Фото 3">
+        <!-- Добавьте свои фотографии сюда -->
+    </div>
+
+    <footer>
+        Вова знает твою тачку лучше, чем ты! - Лабораторные работы №3-4. Выполнил: Брунов В.А. Группа: ИМО-ПИ-23
+    </footer>
+
+    <script>
+        document.querySelector('.services-link').addEventListener('click', function () {
+            window.location.href = 'services.html';
+        });
+
+        document.querySelector('.contacts-link').addEventListener('click', function () {
+            window.location.href = 'contacts.html';
+        });
+
+        document.querySelector('.reviews-link').addEventListener('click', function () {
+            window.location.href = 'reviews.html';
+        });
+    </script>
+</body>
+
+</html>
